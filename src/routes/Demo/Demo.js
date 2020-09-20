@@ -23,7 +23,6 @@ export const Demo = ({
 
   const newDirection = () => {
     const dir = Math.floor(Math.random() * 4);
-    let directionText = "";
     setDirectionText("");
     switch (dir) {
       case 0:
@@ -37,6 +36,9 @@ export const Demo = ({
         break;
       case 3:
         setDirectionText("Left");
+        break;
+      default:
+        setDirectionText("");
         break;
     }
     setDirection(dir);
