@@ -132,6 +132,11 @@
   object-fit: cover;
 }
 
+svg.active path {
+  fill: #0f08 !important;
+  stroke: #0f0a;
+}
+
 /* if video is present, only show arrows */
 .demo.video #top-bar,
 .demo.video #top-right,
