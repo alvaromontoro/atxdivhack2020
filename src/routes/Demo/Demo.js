@@ -13,13 +13,20 @@ export const Demo = ({
   // load the data
   if (id) {
     data = require(`../../data/songs/${id}.json`);
+  } else {
+    data = window.localData;
   }
   updateMonetization(data.monetization);
 
   return (
     <div className="demo">
-      <h1>Demo {id}</h1>
-      <p>This is the Demo component.</p>
+      <h1>
+        {data.title}
+        <span>by {data.artist}</span>
+      </h1>
+      <div id="pad">
+        <svg viewBox="0 0 100 100"></svg>
+      </div>
       <BackButton />
     </div>
   );

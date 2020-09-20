@@ -4,7 +4,6 @@ import { updateMonetization } from "../../utils/monetization";
 import "./Home.css";
 
 export const Home = () => {
-  console.log("Monetization updated to original");
   updateMonetization();
   return (
     <div className="home">

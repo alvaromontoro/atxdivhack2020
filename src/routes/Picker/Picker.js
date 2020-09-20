@@ -1,6 +1,7 @@
 import React from "react";
 import SongList from "../../components/SongList/SongList";
 import BackButton from "../../components/Back/Back";
+import { updateMonetization } from "../../utils/monetization";
 import "./Picker.css";
 
 export const Picker = ({
@@ -8,7 +9,7 @@ export const Picker = ({
     params: { type },
   },
 }) => {
-  console.log("Monetization updated to original");
+  updateMonetization();
 
   return (
     <div className="picker">
