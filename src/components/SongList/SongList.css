@@ -1,0 +1,35 @@
+.songs {
+  list-style: none;
+}
+
+.songs li {
+  margin-bottom: 2rem;
+}
+
+.songs .song-link {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.songs .song-link:focus,
+.songs .song-link:hover {
+  transform: scale(1.1);
+}
+
+.songs .song-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.songs .song-link:focus .song-title,
+.songs .song-link:hover .song-title {
+  color: #eea;
+}
+
+.songs .song-artist {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #000;
+}

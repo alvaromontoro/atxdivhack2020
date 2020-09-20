@@ -1,0 +1,17 @@
+.picker {
+  display: grid;
+  grid-template-rows: 25% 75%;
+  justify-items: center;
+  align-items: end;
+  height: 100%;
+}
+
+.picker .songlist {
+  align-self: start;
+}
+
+.picker .songlist ul {
+  padding: 2rem;
+  max-height: 75%;
+  overflow: auto;
+}

@@ -22,7 +22,7 @@ function App() {
 
   return gamepad ? (
     <Router>
-      <main id="main" tabindex="-1">
+      <main id="main" tabIndex="-1">
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/pick/:type" component={Picker} />
