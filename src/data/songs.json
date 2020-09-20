@@ -10,19 +10,19 @@
     {
       "title": "My friend's song #2",
       "artist": "My friend",
-      "id": "demo-demo",
+      "id": "demo-demo-2",
       "type": "demo"
-    },
-    {
-      "title": "Suerte",
-      "artist": "Shakira",
-      "id": "suerte-shakira",
-      "type": "full"
     },
     {
       "title": "Shake it off",
       "artist": "Taylor Swift",
       "id": "shake-it-off-taylor-swift",
+      "type": "full"
+    },
+    {
+      "title": "Suerte",
+      "artist": "Shakira",
+      "id": "suerte-shakira",
       "type": "full"
     }
   ],

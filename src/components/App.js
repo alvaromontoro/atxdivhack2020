@@ -10,14 +10,22 @@ import Loading from "../components/Loading/Loading.js";
 import gameControl from "gamecontroller.js/src/gamecontrol";
 
 function App() {
-  const [gamepad, setGamepad] = useState(false);
+  const [gamepad, setGamepad] = useState(null);
 
-  gameControl.on("connect", function () {
-    setGamepad(true);
+  gameControl.on("connect", function (e) {
+    setGamepad(e);
+
+    e.on("start", () => {
+      console.log("Button 0 still pressed...");
+    });
+
+    e.on("start", () => {
+      console.log("Button DAadd still pressed...");
+    });
   });
 
   gameControl.on("disconnect", function () {
-    setGamepad(false);
+    setGamepad(null);
   });
 
   return gamepad ? (
