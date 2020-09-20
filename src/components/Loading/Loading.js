@@ -3,8 +3,8 @@ import "./Loading.css";
 
 export const Loading = () => (
   <div className="loading">
-    <h1>Loading</h1>
-    <p>Please connect a gamepad to continue</p>
+    <h1>Waiting...</h1>
+    <p>Please connect a DDR mat to continue</p>
   </div>
 );
 
