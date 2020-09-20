@@ -1,18 +1,18 @@
 {
-  "id": "demo-demo-2",
-  "artist": "My friend",
-  "title": "My friend's song #2",
+  "id": "hidden-demo",
+  "artist": "My Little Pony",
+  "title": "We Will Stand For Everfree",
   "multimedia": {
     "audio": "",
-    "video": "4XVltKKN7m4"
+    "video": "AvwqOp3oGtU"
   },
-  "monetization": "$ilp.uphold.com/2f28xFUMdj9Z",
+  "monetization": "",
   "difficulty": "1",
   "duration": 241000,
   "notes": [
     { "ms": 1000, "type": 1 },
     { "ms": 2000, "type": 2 },
     { "ms": 3000, "type": 3 },
-    { "ms": 4000, "type": 2 }
+    { "ms": 4000, "type": 3 }
   ]
 }

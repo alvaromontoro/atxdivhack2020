@@ -4,7 +4,7 @@
   "title": "My friend's song",
   "multimedia": {
     "audio": "",
-    "video": "AvwqOp3oGtU"
+    "video": ""
   },
   "monetization": "",
   "difficulty": "1",
@@ -13,6 +13,6 @@
     { "ms": 1000, "type": 1 },
     { "ms": 2000, "type": 2 },
     { "ms": 3000, "type": 3 },
-    { "ms": 4000, "type": 4 }
+    { "ms": 4000, "type": 1 }
   ]
 }
