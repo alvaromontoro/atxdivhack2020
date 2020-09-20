@@ -7,14 +7,18 @@ export const Picker = ({
   match: {
     params: { type },
   },
-}) => (
-  <div className="picker">
-    <h1 className="outline-dark">Pick a song</h1>
-    <div className="songlist">
-      <SongList type={type} />
+}) => {
+  console.log("Monetization updated to original");
+
+  return (
+    <div className="picker">
+      <h1 className="outline-dark">Pick a song</h1>
+      <div className="songlist">
+        <SongList type={type} />
+      </div>
+      <BackButton />
     </div>
-    <BackButton />
-  </div>
-);
+  );
+};
 
 export default Picker;

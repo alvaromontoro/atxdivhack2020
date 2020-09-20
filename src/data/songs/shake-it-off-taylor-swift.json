@@ -1,0 +1,18 @@
+{
+  "id": "shake-it-off-taylor-swift",
+  "artist": "Taylor Swift",
+  "title": "Shake it off",
+  "multimedia": {
+    "audio": "",
+    "video": "nfWlot6h_JM"
+  },
+  "monetization": "$ilp.uphold.com/2f28xFUMdj9Z",
+  "difficulty": "1",
+  "duration": 241000,
+  "notes": [
+    { "ms": 1000, "type": 1 },
+    { "ms": 2000, "type": 2 },
+    { "ms": 3000, "type": 3 },
+    { "ms": 4000, "type": 4 }
+  ]
+}

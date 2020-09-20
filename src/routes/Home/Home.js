@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { updateMonetization } from "../../utils/monetization";
 import "./Home.css";
 
 export const Home = () => {
-  console.log("updating to original");
+  console.log("Monetization updated to original");
+  updateMonetization();
   return (
     <div className="home">
       <h1 className="outline-dark">

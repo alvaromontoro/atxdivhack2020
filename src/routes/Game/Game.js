@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { updateMonetization } from "../../utils/monetization";
 
 export const Game = ({
   match: {
     params: { id },
   },
 }) => {
-  console.log("update to artist");
+  updateMonetization("$ilp.uphold.com/2f28xFUMdj9Z");
   console.log(window.ddrmat);
   return (
     <div className="game">

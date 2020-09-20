@@ -1,5 +1,7 @@
 import React from "react";
 import BackButton from "../../components/Back/Back";
+import { updateMonetization } from "../../utils/monetization";
+
 import "./Demo.css";
 
 export const Demo = ({
@@ -7,9 +9,13 @@ export const Demo = ({
     params: { id },
   },
 }) => {
-  console.log("update to artist");
-  console.log(id);
-  
+  let data = {};
+  // load the data
+  if (id) {
+    data = require(`../../data/songs/${id}.json`);
+  }
+  updateMonetization(data.monetization);
+
   return (
     <div className="demo">
       <h1>Demo {id}</h1>
