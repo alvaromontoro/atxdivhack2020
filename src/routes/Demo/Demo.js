@@ -15,7 +15,11 @@ export const Demo = ({
   let data = {};
   // load the data
   if (id) {
-    data = require(`../../data/songs/${id}.json`);
+    if (id === "user-load") {
+      data = window.localData;
+    } else {
+      data = require(`../../data/songs/${id}.json`);
+    }
   } else {
     data = window.localData;
   }
