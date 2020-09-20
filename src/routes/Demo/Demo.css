@@ -18,6 +18,7 @@
 }
 
 .demo h1 {
+  position: relative;
   padding-top: 1rem;
   text-align: center;
   font-size: 2.5rem;
@@ -40,6 +41,9 @@
   border: 1vmin solid #222;
   border-radius: 2vmin;
   background: #222;
+  width: 100%;
+  height: auto;
+  max-width: 60vmin;
 }
 
 #top-bar {
@@ -119,6 +123,15 @@
   font-weight: 300;
 }
 
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 /* if video is present, only show arrows */
 .demo.video #top-bar,
 .demo.video #top-right,
@@ -129,6 +142,7 @@
 }
 
 .demo.video #pad {
+  opacity: 0.7;
   border: 0;
   background: transparent;
 }

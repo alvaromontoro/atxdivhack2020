@@ -23,7 +23,20 @@ export const Demo = ({
 
   return (
     <div className={`demo ${data.multimedia.video && "video"}`}>
-      <h1>
+      {data.multimedia.video && (
+        <div id="video">
+          <iframe
+            title={`Video for ${data.title}`}
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/${data.multimedia.video}?controls=0&amp;autoplay=1`}
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      )}
+      <h1 className="outline">
         {data.title}
         <span>by {data.artist}</span>
       </h1>
