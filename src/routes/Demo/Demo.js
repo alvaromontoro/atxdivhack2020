@@ -10,6 +10,7 @@ export const Demo = ({
   },
 }) => {
   const [direction, setDirection] = useState(Math.floor(Math.random() * 4));
+  const [directionText, setDirectionText] = useState("");
 
   let data = {};
   // load the data
@@ -22,6 +23,22 @@ export const Demo = ({
 
   const newDirection = () => {
     const dir = Math.floor(Math.random() * 4);
+    let directionText = "";
+    setDirectionText("");
+    switch (dir) {
+      case 0:
+        setDirectionText("Up");
+        break;
+      case 1:
+        setDirectionText("Right");
+        break;
+      case 2:
+        setDirectionText("Down");
+        break;
+      case 3:
+        setDirectionText("Left");
+        break;
+    }
     setDirection(dir);
   };
 
@@ -148,6 +165,9 @@ export const Demo = ({
         </div>
       </div>
       <BackButton />
+      <div id="screen-reader" className="a11y-hidden" aria-live="assertive">
+        {directionText}
+      </div>
     </div>
   );
 };
