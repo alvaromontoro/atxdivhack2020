@@ -1,5 +1,6 @@
 import React from "react";
 import BackButton from "../../components/Back/Back";
+import "./Loader.css";
 
 export const Loader = () => (
   <div className="loader">

@@ -5,6 +5,14 @@ import "./Home.css";
 
 export const Home = () => {
   updateMonetization();
+
+  // reset the options
+  window.ddrmat
+    .before("button2", () => {})
+    .before("button3", () => {})
+    .before("button1", () => {})
+    .before("button0", () => {});
+
   return (
     <div className="home">
       <h1 className="outline-dark">

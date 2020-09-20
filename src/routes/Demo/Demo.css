@@ -133,8 +133,8 @@
 }
 
 svg.active path {
-  fill: #0f08 !important;
-  stroke: #0f0a;
+  fill: #0f0a !important;
+  stroke: #0f0f;
 }
 
 /* if video is present, only show arrows */
