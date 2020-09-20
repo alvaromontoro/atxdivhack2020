@@ -118,3 +118,21 @@
   text-decoration: none;
   font-weight: 300;
 }
+
+/* if video is present, only show arrows */
+.demo.video #top-bar,
+.demo.video #top-right,
+.demo.video #top-left,
+.demo.video #bottom-right,
+.demo.video #bottom-left {
+  visibility: hidden;
+}
+
+.demo.video #pad {
+  border: 0;
+  background: transparent;
+}
+
+.demo.video #buttons {
+  background: transparent;
+}
