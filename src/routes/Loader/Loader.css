@@ -1,5 +1,10 @@
 .loader {
+  display: grid;
+  grid-template-rows: 25% 75%;
+  justify-items: center;
+  align-items: end;
   height: 100%;
+  position: relative;
 }
 
 .loader::before {
@@ -15,4 +20,8 @@
   background-size: cover;
   background-position: center center;
   opacity: 0.15;
+}
+
+.loader .form {
+  align-self: start;
 }
