@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import BackButton from "../../components/Back/Back";
 
 export const Loader = () => (
   <div className="loader">
     <h1>Loader</h1>
     <p>Here you can load your JSON.</p>
-    <Link to="/">Go Home</Link>
+    <BackButton />
   </div>
 );
 

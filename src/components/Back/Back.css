@@ -1,0 +1,19 @@
+.back-button {
+  position: absolute;
+  display: inline-block;
+  bottom: 1rem;
+  left: 1rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 3;
+}
+
+.back-button:hover,
+.back-button:focus {
+  transform: scale(1.1);
+}
+
+.back-button:hover path,
+.back-button:focus path {
+  fill: #eea !important;
+}

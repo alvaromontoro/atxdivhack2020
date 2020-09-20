@@ -19,7 +19,7 @@ body,
   font-family: Helvetica, Arial, sans-serif;
 }
 
-#root::before {
+/* #root::before {
   content: "";
   position: absolute;
   display: block;
@@ -32,7 +32,7 @@ body,
   background-size: cover;
   background-position: center center;
   opacity: 0.05;
-}
+} */
 
 .a11y-hidden {
   position: absolute;

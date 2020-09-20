@@ -5,12 +5,16 @@ export const Game = ({
   match: {
     params: { id },
   },
-}) => (
-  <div className="game">
-    <h1>Game {id}</h1>
-    <p>This is the Game component.</p>
-    <Link to="/">home</Link>
-  </div>
-);
+}) => {
+  console.log("update to artist");
+  console.log(window.ddrmat);
+  return (
+    <div className="game">
+      <h1>Game {id}</h1>
+      <p>This is the Game component.</p>
+      <Link to="/">home</Link>
+    </div>
+  );
+};
 
 export default Game;

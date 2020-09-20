@@ -1,5 +1,6 @@
 import React from "react";
 import SongList from "../../components/SongList/SongList";
+import BackButton from "../../components/Back/Back";
 import "./Picker.css";
 
 export const Picker = ({
@@ -12,6 +13,7 @@ export const Picker = ({
     <div className="songlist">
       <SongList type={type} />
     </div>
+    <BackButton />
   </div>
 );
 

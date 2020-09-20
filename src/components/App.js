@@ -14,6 +14,7 @@ function App() {
 
   gameControl.on("connect", function (e) {
     setGamepad(e);
+    window.ddrmat = e;
 
     e.on("start", () => {
       console.log("Button 0 still pressed...");
