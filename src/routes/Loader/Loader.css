@@ -28,11 +28,11 @@
 
 textarea {
   display: block;
-  
+
   width: 20rem;
   max-width: 60vmin;
   border: 1px solid black;
-  background: white;
+  background: #fff8;
   border-radius: 0.5rem 0.5rem 0 0;
   height: 10rem;
   margin: auto auto;
@@ -46,4 +46,20 @@ button {
   border-top: 0;
   max-width: 60vmin;
   margin: auto auto;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.buttons a {
+  flex: 1;
+  display: inline-block;
+  background: #369;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0.25vmin;
+  text-decoration: none;
 }

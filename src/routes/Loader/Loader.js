@@ -39,7 +39,7 @@ export const Loader = () => {
         ></textarea>
         <button onClick={processData}>Process JSON</button>
         {data && (
-          <div>
+          <div className="buttons">
             <Link to="/game/user-load">Play Game</Link>
             <Link to="/demo/user-load">Play Demo</Link>
           </div>
