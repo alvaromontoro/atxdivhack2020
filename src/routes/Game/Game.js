@@ -6,7 +6,7 @@ export const Game = ({
     params: { id },
   },
 }) => (
-  <div>
+  <div className="game">
     <h1>Game {id}</h1>
     <p>This is the Game component.</p>
     <Link to="/">home</Link>

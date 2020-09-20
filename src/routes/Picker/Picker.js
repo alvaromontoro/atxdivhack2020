@@ -6,7 +6,7 @@ export const Picker = ({
     params: { type },
   },
 }) => (
-  <div>
+  <div className="picker">
     <h1>Picker {type}</h1>
     <p>This is the Demo component.</p>
     <Link to={`/${type}/one`}>Song one</Link>

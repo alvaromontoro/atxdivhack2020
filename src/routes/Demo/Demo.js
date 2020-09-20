@@ -6,7 +6,7 @@ export const Demo = ({
     params: { id },
   },
 }) => (
-  <div>
+  <div className="demo">
     <h1>Demo {id}</h1>
     <p>This is the Demo component.</p>
     <Link to="/">home</Link>
