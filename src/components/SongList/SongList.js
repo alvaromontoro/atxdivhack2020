@@ -5,15 +5,18 @@ import "./SongList.css";
 
 export const SongList = ({ type }) => {
   return (
-    <ul class="songs">
-      {songs.data.map((el) => (
-        <li key={el.id}>
-          <Link to={`/${type}/${el.id}`} className="song-link">
-            <div className="song-title outline">{el.title}</div>
-            <div className="song-artist">by {el.artist}</div>
-          </Link>
-        </li>
-      ))}
+    <ul className="songs">
+      {songs.data.map(
+        (el) =>
+          (type === "demo" || el.type === "full") && (
+            <li key={el.id}>
+              <Link to={`/${type}/${el.id}`} className="song-link">
+                <div className="song-title outline">{el.title}</div>
+                <div className="song-artist">by {el.artist}</div>
+              </Link>
+            </li>
+          )
+      )}
     </ul>
   );
 };

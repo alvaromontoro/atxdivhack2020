@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: 1px dashed #369;
+  outline-offset: 0.25rem;
+}
+
 html,
 body,
 #root {

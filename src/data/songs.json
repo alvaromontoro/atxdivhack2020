@@ -4,17 +4,26 @@
     {
       "title": "My friend's song",
       "artist": "My friend",
-      "id": "demo-demo"
+      "id": "demo-demo",
+      "type": "full"
+    },
+    {
+      "title": "My friend's song #2",
+      "artist": "My friend",
+      "id": "demo-demo",
+      "type": "demo"
     },
     {
       "title": "Suerte",
       "artist": "Shakira",
-      "id": "suerte-shakira"
+      "id": "suerte-shakira",
+      "type": "full"
     },
     {
       "title": "Shake it off",
       "artist": "Taylor Swift",
-      "id": "shake-it-off-taylor-swift"
+      "id": "shake-it-off-taylor-swift",
+      "type": "full"
     }
   ],
   "updated": "2020-09-19"

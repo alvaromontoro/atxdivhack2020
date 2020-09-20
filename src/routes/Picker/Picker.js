@@ -9,7 +9,7 @@ export const Picker = ({
 }) => (
   <div className="picker">
     <h1 className="outline-dark">Pick a song</h1>
-    <div class="songlist">
+    <div className="songlist">
       <SongList type={type} />
     </div>
   </div>
