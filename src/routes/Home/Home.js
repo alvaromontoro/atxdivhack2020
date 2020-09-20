@@ -6,12 +6,14 @@ import "./Home.css";
 export const Home = () => {
   updateMonetization();
 
-  // reset the options
-  window.ddrmat
-    .before("button2", () => {})
-    .before("button3", () => {})
-    .before("button1", () => {})
-    .before("button0", () => {});
+  if (window.ddrmat) {
+    // reset the options
+    window.ddrmat
+      .before("button2", () => {})
+      .before("button3", () => {})
+      .before("button1", () => {})
+      .before("button0", () => {});
+  }
 
   return (
     <div className="home">

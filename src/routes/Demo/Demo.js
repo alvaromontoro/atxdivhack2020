@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import BackButton from "../../components/Back/Back";
 import { updateMonetization } from "../../utils/monetization";
 
@@ -48,11 +48,13 @@ export const Demo = ({
     }
   };
 
-  window.ddrmat
-    .before("button2", () => buttonPressed(0))
-    .before("button3", () => buttonPressed(1))
-    .before("button1", () => buttonPressed(2))
-    .before("button0", () => buttonPressed(3));
+  if (window.ddrmat) {
+    window.ddrmat
+      .before("button2", () => buttonPressed(0))
+      .before("button3", () => buttonPressed(1))
+      .before("button1", () => buttonPressed(2))
+      .before("button0", () => buttonPressed(3));
+  }
 
   return (
     <div className={`demo ${data.multimedia.video && "video"}`}>
